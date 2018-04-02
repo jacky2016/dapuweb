@@ -1,0 +1,17 @@
+<view class="section">
+       <view>
+             <view>当前积分</view>
+             <view class="help" bindtap='usehelp'><image src="../../icon/help.png" style="width:36rpx;height:36rpx;"></image><view style="float: right;">使用帮助</view></view>
+       </view>
+       <view style="text-align: center;">
+            <view class="points">{{usage_point}}</view>
+            <view bindtap='exchangetap'>【兑换优惠券】</view>
+       </view>
+</view>
+<view  class="infotitle">收支明细</view>
+<view class="corelist" wx:for="{{pointinfo}}">
+   <view>
+        <view>{{item.reason}}</view><view class="core">{{item.change_point}}</view>
+  </view>
+  <view style="font-size:24rpx;">{{item.addtime}}</view>
+</view>

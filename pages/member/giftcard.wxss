@@ -1,0 +1,64 @@
+page{
+    background: #f0f0f0;
+}
+.section{
+    background: #fff;
+    margin: 4rpx 0rpx;
+    font-size: 32rpx;
+    padding: 20rpx;
+}
+.rightitem{
+     float: right;
+     margin-top: -46rpx;
+     font-weight: bold; 
+}
+.useable{
+      width:96%;
+      background:#DA5278;
+      color:#fff;
+      font-size:30rpx;
+      margin:20rpx 0rpx;
+      margin-left:2%;
+      border-radius:10rpx;
+}
+.left{
+      margin-top: -160rpx;
+      padding: 40rpx 20rpx; 
+}
+.right{
+      margin-left: 120rpx;
+      padding: 20rpx 40rpx; 
+}
+.container{
+      width:100%; 
+}
+.giftcard{
+       width: 80rpx;
+       height: 80rpx;
+       margin-left: 20rpx;
+}
+.unuseable{
+      width:96%;
+      background:#ccc;
+      color:#fff;
+      font-size:30rpx;
+      margin:20rpx 0rpx;
+      margin-left:2%;
+      border-radius:10rpx;
+}
+.tips{
+       text-align: right;
+       padding: 0rpx 20rpx;
+}
+.help{
+       width: 32rpx;
+       height: 32rpx;
+       background: #000;
+       border-radius: 100rpx;
+       margin-top: -20rpx; 
+}
+.txt{
+       float: right;
+       font-size: 30rpx;
+       margin-top: 10rpx;
+}

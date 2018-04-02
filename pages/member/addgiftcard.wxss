@@ -1,0 +1,34 @@
+page{
+    background: #f0f0f0;
+}
+.bindcard{
+      background: #DA5278;
+      color: #fff;
+      border-color: #DA5278;
+      width: 90%;
+      font-size:32rpx;
+}
+.section{
+       width: 90%;
+       background: #fff;
+       text-align: center;
+       margin: 10px 0px;
+       padding: 10px 0px;
+       margin-left:auto;
+       margin-right:auto;
+}
+.section__title{
+        width:20%;
+}
+input{
+         margin-top: -26px;
+         margin-left: 20%;
+         width: 80%;
+         text-align: left;
+}
+.container{
+      width: 100%;
+      height:100%;
+      text-align: center;
+      font-size: 30rpx;
+}

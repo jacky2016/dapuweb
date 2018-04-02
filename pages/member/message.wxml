@@ -1,0 +1,7 @@
+<view class="section" wx:for="{{comments}}">
+     <view class="date">{{item.time}}</view>
+     <view class="context {{item.mem_read_status == 'false'?'noreadcss':''}}" bindtap='updatestatus' data-commentid="{{item.comment_id}}">
+          <view class="title">{{item.title}}<view class="badge" wx:if="{{item.mem_read_status == 'false'}}"></view></view>
+          <view>{{item.comment}}</view>
+     </view>
+</view>

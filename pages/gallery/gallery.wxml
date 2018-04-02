@@ -1,0 +1,17 @@
+<view class="container">
+      <view class="nav-scroll">
+	         <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+		           <text wx:for="{{classify}}" wx:key="id" data-cateid="{{item.cat_id}}" catchtap="handleTap" class="nav-name {{item.cat_id === cateid ? 'nav-hover' : ''}}">{{item.name}}</text>
+	         </scroll-view>
+       </view>
+
+      <div class="weui-grids">
+                <a href="javascript:;" wx:for="{{products}}" class="weui-grid {{index%2==0?'leftitem':'rightitem'}}"  bindtap="productdetail" data-goodsid="{{item.goods_id}}" data-cateid="{{item.cat_id}}">
+                    <div class="weui-grid__icon">
+                    <image src="{{item.url}}" style="width:320rpx;height:320rpx;"></image>
+                    </div>
+                    <p class="weui-grid__label">{{item.name}}</p>
+                    <p style="color:red;">￥{{item.price}}</p>
+                </a>
+            </div>
+</view>

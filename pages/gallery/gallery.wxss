@@ -1,0 +1,65 @@
+page{
+    background: #f0f0f0;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #000;
+}
+.weui-grid{
+  width:50%;
+  padding: 10rpx;
+  background-color:#fff;
+  border-top: 5rpx solid #f0f0f0;
+  border-bottom: 5rpx solid #f0f0f0;
+}
+.leftitem{
+    border-left:10rpx solid #f0f0f0;
+    border-right:5rpx solid #f0f0f0;
+}
+.rightitem{
+    border-left:5rpx solid #f0f0f0;
+    border-right:10rpx solid #f0f0f0;
+}
+.weui-grids{
+  border: none;
+  font-size: 28rpx;
+}
+.weui-grid__icon{
+   width:320rpx;
+   height:320rpx;
+}
+.head_back {
+    background: url(http://activity.dapuimg.com/20170116000_back128-2.png);
+    background-size: 60rpx;
+    width: 60rpx;
+    height: 60rpx;
+    margin-top:10rpx;
+    margin-left:10rpx;
+}
+.head_search {
+    background: url(http://activity.dapuimg.com/search_20161229.png);
+    background-size: 48rpx;
+    width: 48rpx;
+    height: 48rpx;
+    margin-top:10rpx;
+    margin-right: 10rpx;
+}
+.scroll-view_H {
+	white-space:nowrap;
+	width:100%;
+	background-color:rgba(255, 255, 255, 0.7);
+
+}
+.nav-hover {
+	color:rgb(177, 85, 80);
+	border-bottom:3px solid rgb(177, 85, 80);
+}
+.nav-name {
+	display:inline-block;
+	margin:0 5px;
+	font-size:16px;
+	padding:10px;
+}

@@ -1,0 +1,20 @@
+<view class="section" bindtap='addtap'>
+        <view><text style="font-weight:bold;">➕</text>添加礼品卡</view>
+        <view class="rightitem"><image src="../../icon/rightArrow.png" style="width: 30px;height: 30px;"></image></view>
+</view>
+<view class="container">
+      <view class="useable" wx:for="{{giftcards}}">   
+         <view class="right">
+               <view>卡号：{{item.sub_card_code}}</view>
+               <view style="font-size:24rpx;">余额：￥{{item.balance}}</view>
+               <view style="font-size:24rpx;">有效期：{{item.begintime}}~{{item.endtime}}</view>
+         </view>
+         <view class="left"><image src="../../icon/giftcard.png" class="giftcard"></image></view>
+      </view>
+      <view class="tips">
+              <view bindtap='useinfotap'>
+                      <image src="../../icon/help.png" class="help"></image>
+                      <view class="txt">礼品卡使用说明</view>
+              </view>
+      </view>
+</view>

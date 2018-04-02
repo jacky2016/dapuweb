@@ -1,0 +1,94 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #000;
+  font-size:24rpx;
+}
+.container > view{
+    margin:10rpx 0rpx;
+}
+.slide-image{
+    width:100%;
+}
+.common{
+    border-bottom: 1px solid #ccc;
+    border-top:1px solid #ccc;
+    padding:6rpx; 
+}
+.unselect{
+     background: #fff;
+     color: #000;
+     padding: 2px 15px;
+     border: 1px solid #bbb;
+     margin-left:10px;
+     border-radius:4px;
+}
+.member{
+     background:#DA5278;
+     color:#fff;
+     border-radius:8rpx;
+     padding: 4rpx 15rpx;
+     margin-right: 10rpx;
+}
+.select{
+     background: #d9534f;
+     color: #fff;
+     padding: 2px 15px;
+     border: 1px solid #d9534f;
+     border-radius:4px;
+}
+.topbar{
+     width: 50%;
+     font-size: 30rpx;
+     text-align: center;
+     float: left;
+}
+.weui-tabbar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: fixed;
+    z-index: 500;
+    bottom: 0;
+    width: 100%;
+    background-color: #F7F7FA;
+}
+.weui-tabbar__item {
+    display: block;
+    padding: 5px 0 0;
+    font-size: 0;
+    color: #fff;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.weui-tabbar__label {
+    text-align: center;
+    color: #fff;
+    font-size: 30rpx;
+    line-height: 1.8;
+}
+.discussall{
+    padding:4rpx 20rpx;
+    border:2rpx solid #ccc;
+}
+.headimg{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 10rpx;
+}
+.weui-badge {
+    display: inline-block;
+    padding: .12em .4em;
+    min-width: 14rpx;
+    border-radius: 36rpx;
+    background-color: #F43530;
+    color: #FFFFFF;
+    line-height: 1.1;
+    text-align: center;
+    font-size: 24rpx;
+    vertical-align: middle;
+}

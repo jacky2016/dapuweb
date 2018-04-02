@@ -1,0 +1,48 @@
+page {
+  background-color: #f0f0f0;
+}
+.section{
+  font-size: 24rpx;
+  position: relative;
+  background:#fff;
+  padding:10rpx 20rpx;
+  margin-top:20rpx;
+}
+.deliverylog{
+    position: absolute;
+    left:160rpx;
+    top:10rpx;
+    font-size:22rpx;
+    color: #ccc;
+}
+.title{
+     padding: 10rpx 0rpx;
+     border-bottom: 2rpx solid #ccc;
+}
+.point{
+      width:20rpx;
+      height:20rpx;
+      background:#ccc;
+      border-radius: 50rpx;
+      position:absolute;
+      top:0rpx;
+      left:-9rpx;
+}
+.right{
+    position: absolute;
+    left:40rpx;
+    top:-2rpx; 
+    font-size:22rpx;
+}
+.left{
+    height: 130rpx;
+    border-left:1px solid #ccc;
+}
+.pointdot{
+      width:30rpx;
+      height:30rpx;
+      border-radius: 50rpx;
+      position:absolute;
+      top:-2rpx;
+      left:-13rpx;
+}

@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/gallery/index",
+    "pages/gallery/gallery",
+    "pages/cart/index",
+    "pages/member/index",
+    "pages/member/point",
+    "pages/member/coupon",
+    "pages/member/giftcard",
+    "pages/member/addgiftcard",
+    "pages/member/receiver",
+    "pages/member/addreceiver",
+    "pages/member/message",
+    "pages/member/comment",
+    "pages/search/index",
+    "pages/logs/logs",
+    "pages/product/index",
+    "pages/product/detail",
+    "pages/discuss/index",
+    "pages/order/index",
+    "pages/order/orderdetail",
+    "pages/order/delivery",
+    "pages/about/index",
+    "pages/about/template"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "大朴官网",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance":0
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#75C5AF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/home.png",
+        "selectedIconPath": "icon/home_hover.png"
+      },
+      {
+        "pagePath": "pages/gallery/index",
+        "text": "分类",
+        "iconPath": "icon/gallery.png",
+        "selectedIconPath": "icon/gallery_hover.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "icon/cart.png",
+        "selectedIconPath": "icon/cart_hover.png"
+      },
+      {
+        "pagePath": "pages/member/index",
+        "text": "我",
+        "iconPath": "icon/member.png",
+        "selectedIconPath": "icon/member_hover.png"
+      }
+    ]
+  },
+  "debug": true
+}

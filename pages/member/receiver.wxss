@@ -1,0 +1,41 @@
+page {
+  background-color: #f0f0f0;
+}
+.section{
+    font-size: 24rpx;
+    padding:10rpx 20rpx;
+    background: #fff;
+    margin-top: 10rpx;
+}
+.delete{
+     position: absolute;
+     top: 10rpx;
+     right: 0rpx;
+     border: 2rpx solid #ccc;
+     padding: 2rpx 20rpx;
+     border-radius: 8rpx;
+}
+.mobile{
+      position: absolute;
+      top: 5rpx;
+      right: 0rpx;
+}
+.info{
+      border-bottom: 2rpx dashed #ccc;
+      padding:5rpx 0rpx;
+      position:relative; 
+}
+.option{
+       position: relative;
+       padding:10rpx;
+}
+.footer{
+       width:100%;
+       position: absolute;
+       bottom: 0rpx;
+       background: #DA5278;
+       color: #fff;
+       font-size: 32rpx;
+       text-align: center;
+       line-height: 80rpx;
+}

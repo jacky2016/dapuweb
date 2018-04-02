@@ -1,0 +1,59 @@
+<view class="container">
+      <swiper indicator-dots="true" autoplay="true" style="height:480rpx;width:100%;">
+          <block wx:for="{{images}}">
+            <swiper-item>
+                <image src="{{item.imgurl}}" class="slide-image"/>
+            </swiper-item>
+         </block>
+      </swiper>
+</view>
+<view class="container" style="padding-left: 2%;width: 96%;padding-top: 2%;margin-bottom:5%;">
+          <view style="font-size:30rpx;">{{detail.name}}</view>
+          <view style="color:#ccc;">{{detail.brief}}</view>
+          <view>商品编码: {{detail.product_bn}}</view>
+          <view>销售价: <text style="color:#b10000">￥{{detail.price}}</text></view>
+          <view><text class="member">会员价</text> <text style="color:#b10000">￥{{detail.member_lv_price}}</text></view>
+          
+          <view style="margin:26rpx 0rpx;">颜色:
+                 <text class="select">落春</text><text class="unselect">蕴</text>
+          </view>
+          <view style="margin:26rpx 0rpx;">尺寸:
+                  <text class="select">1.5米床</text>
+                  <text class="unselect">1.8米床</text>
+          </view>
+          
+          <view class="common" style="margin-top:10px;" bindtap='detailtap' data-goodsid="{{detail.goods_id}}">查看商品详情<text style="float:right;">></text></view>
+          <view style="margin-top:20rpx;">用户评价（{{detail.discuss_count}}）</view>
+          <block wx:if="{{discuss}}">
+          <view>
+              <image src='{{discuss.headimgurl}}' class="headimg"></image>
+              <view>{{discuss.author}}</view>
+          </view>
+          <view>{{discuss.comment}}</view>
+          <view style="text-align:center;margin-top:20rpx;">
+                   <text  class="discussall" bindtap="discusstap" data-goodsid="{{goodsid}}">查看全部评价</text>
+          </view>
+          </block>
+          <block wx:else>
+                <view style="text-align:center;">暂无用户评论 </view>
+          </block>
+          <view style="text-align: center;line-height: 100rpx;color: #ccc;">继续拖动，查看图文详情</view>
+</view>
+<div class="weui-tabbar">
+                <a href="javascript:;" class="weui-tabbar__item weui-bar__item_on" style="width:15%">
+                    <p class="weui-tabbar__label"><image src="https://activity.dapuimg.com/dapu_online.png" style="width:55rpx;height:55rpx;"></image></p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item" style="width:15%">
+                    <p class="weui-tabbar__label">
+                    <image src="http://activity.dapuimg.com/cart_icon_hover_2017030100.png" style="width:55rpx;height:55rpx;"></image>
+                     <span class="weui-badge" style="margin-top: -70rpx;margin-left: -10rpx;">8</span>
+                    </p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item" style="width:35%;background:#DA5278;border-right: 1px solid #fff;color:#fff;">
+                    <p class="weui-tabbar__label">送心意</p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item" style="width:35%;background:#DA5278;color:#fff;">
+                    <p class="weui-tabbar__label">加入购物车</p>
+                </a>
+</div>
+

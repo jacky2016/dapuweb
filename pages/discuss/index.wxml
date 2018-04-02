@@ -1,0 +1,21 @@
+<view class="section" wx:for="{{discuss}}">
+        <view>
+              <image src='{{item.headimgurl}}' class="headimg"></image>
+              <view>{{item.author}}</view>
+              <text class="date">{{item.time}}</text>
+          </view>
+          <view class="comment">{{item.comment}}</view>
+          <block wx:if="{{item.upimgs}}">
+            <view>
+                 <block wx:for="{{item.upimgs}}">
+                 <image src="https://activity.dapuimg.com/{{item}}" style="width:100px;height:100px;padding:10rpx;"></image>
+                 </block>
+             </view>
+          </block>
+          <block wx:if="{{item.reply}}">
+              <view class="replay_box">
+                  <text>{{item.reply}}</text>
+              </view>
+          </block> 
+</view>
+<view class="loadmore">{{loadmore}}</view>

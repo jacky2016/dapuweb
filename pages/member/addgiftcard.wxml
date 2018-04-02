@@ -1,0 +1,15 @@
+<form bindsubmit="formSubmit">
+<view class="container">
+  <view class="section">
+       <view class="section__title">卡号</view>
+       <input name="input" placeholder="请输入卡号" name="sub_card_code"/>
+  </view>
+  <view class="section">
+       <view class="section__title">密码</view>
+       <input name="input" placeholder="请输入密码" name="sub_card_pwd" password="true"/>
+  </view>
+  <view class="btn-area">
+       <button formType="submit" class="bindcard">绑定礼品卡</button>
+  </view>
+  </view>
+</form>

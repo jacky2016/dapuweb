@@ -1,0 +1,17 @@
+<form bindsubmit="formSubmit">
+<view class="section">
+       <view class="item">收货人：<input name="ship_name" class="input"/></view>
+       <view class="item">联系方式：<input name="ship_mobile" class="input"/></view>
+       <view class="item">
+       <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+        </picker>
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" name="ship_area" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="picker">
+      所在地区：{{multiArray[0][multiIndex[0]]}}-{{multiArray[1][multiIndex[1]]}}-{{multiArray[2][multiIndex[2]]}}
+    </view>
+</picker>
+       </view>
+       <view class="item">详细地址：<input name="ship_addr_area" class="input"/></view>
+       <button formType="submit" class="savebtn">保存地址</button>  
+</view>
+</form>

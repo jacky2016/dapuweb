@@ -1,0 +1,79 @@
+page {
+  background-color: #f0f0f0;
+}
+.section{
+  font-size: 24rpx;
+  position: relative;
+  background:#fff;
+  padding:10rpx 20rpx;
+  margin-top:20rpx;
+}
+.status{
+   position: absolute;
+   right:20rpx;
+   top:10rpx;
+   color:#DA5278;
+}
+.mobile{
+    position: absolute;
+    right:0rpx;
+    top:0rpx;
+}
+.useinfo{
+    position: relative;
+    font-weight:bold;
+}
+.addrinfo{
+    position: relative;
+    margin:10rpx 0rpx;
+    padding: 10rpx 0rpx; 
+}
+.addr{
+    position: absolute;
+    left:50rpx;
+    top: 8rpx;
+}
+.titletips{
+    margin-bottom: 20rpx;
+    padding: 10rpx 0rpx;
+    border-bottom: 2rpx solid #ccc; 
+}
+.goodsinfo{
+     position: absolute;
+     left: 110rpx;
+     top: 0rpx;
+}
+.nums{
+      position: absolute;
+      right: 0rpx;
+      bottom: 20rpx;
+      font-size:26rpx;
+}
+.otherinfo{
+      position: absolute;
+      right: 0rpx;
+      top: 0rpx;
+      color:#DA5278;
+}
+.price{
+     position: absolute;
+     right: 0rpx;
+     top: 0rpx;
+     color:#DA5278;
+     font-size:26rpx;
+}
+.total{
+      text-align:right;
+      margin:10rpx 0rpx;
+      color:#DA5278;
+      font-size:26rpx;
+}
+.date{
+      text-align:right;
+      margin:10rpx 0rpx;
+      color:#ccc;
+}
+.online{
+    text-align: center;
+    position: relative;
+}

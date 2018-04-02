@@ -1,0 +1,39 @@
+page{
+    background: #f0f0f0;
+}
+.container{
+    background: #f0f0f0;
+    width:100%;
+    height:100%;
+}
+.section{
+    background: #f0f0f0;
+    padding: 20rpx;
+}
+.date{
+    font-size: 22rpx;
+    text-align: center;
+}
+.context{
+    background: #fff;
+    padding: 10rpx;
+    font-size: 24rpx;
+}
+.title{
+    font-size: 26rpx;
+    font-weight: bold;
+}
+.badge{
+  float:left;
+  width: 8px;
+  height: 8px;
+  line-height: 8px;
+  background: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 8px;
+}
+.noreadcss{
+     background:#e9e9e9;
+}

@@ -1,0 +1,28 @@
+page {
+  background-color: #f0f0f0;
+}
+.section{
+     padding: 20rpx;
+     background: #fff;
+     font-size:30rpx;
+}
+.item{
+     border-bottom: 2rpx solid #ccc;
+     position: relative;
+     padding:16rpx 0rpx;
+}
+.input{
+    position: absolute;
+    top: 16rpx;
+    left: 150rpx;
+    width: 85%;
+}
+.savebtn{
+      margin-top: 40rpx;
+      background: #DA5278;
+      color: #fff;
+      font-size: 30rpx;
+      text-align: center;
+      padding: 4rpx;
+      border-radius: 8rpx;
+}

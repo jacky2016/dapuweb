@@ -1,0 +1,27 @@
+<div class="weui-flex" style="background: rgb(242, 240, 240);">
+    <div><div class="placeholder"><image class="head_back"></image></div></div>
+    <div class="weui-flex__item" style="text-align:center;margin-top:10rpx;"><div class="placeholder">{{text}}</div></div>
+    <div><div class="placeholder"><image class="head_search"></image></div></div>
+</div>
+<view class="container">
+    <view class="nav_left">
+        <view class="nav_left_items" bindtap="changetab" wx:for="{{classify}}" data-item="{{index}}">
+             <view wx:if="{{currentindex === index}}" style="{{color}}">{{item.name}}</view>
+             <view wx:else style="<{hover}>">{{item.name}}</view>
+        </view>
+    </view>
+    <view class="nav_right">
+        <view class="nav_right_items">
+            <image src="{{imgUrl}}" style="width:100%;"></image>
+            <text>——{{gallery}}分类——</text>
+        </view>
+        <div class="weui-grids">
+                <a href="javascript:;" class="weui-grid" wx:for="{{cates}}" bindtap="galleryitem" data-parentid="{{item.parent_id}}" data-cateid="{{item.cat_id}}" data-catename="{{gallery}}">
+                    <div class="weui-grid__icon">
+                        <image src="{{item.imgUrl}}" style="width:100rpx;height:100rpx;border-radius: 100rpx;"></image>
+                    </div>
+                    <p class="weui-grid__label">{{item.name}}</p>
+                </a>
+            </div>
+    </view>
+</view>

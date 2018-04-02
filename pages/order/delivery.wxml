@@ -1,0 +1,39 @@
+<view class="section" wx:for="{{delivery}}">
+        <view style="padding: 10px 0px;">
+          <image src="{{imgurl}}" style="width:60px;height:60px;"/>
+        </view>
+        <view class="deliverylog">
+               <view style="color: #000;font-size: 26rpx;">物流状态 
+               <text style="color:#0eaf09;">{{item.dly.logistics_status}}</text></view>
+               <view>物流公司：{{item.dly.logi_name}}</view>
+               <view>运单编号：{{item.dly.logi_no}}</view>
+               <view>官方网站：{{item.dly.website}}</view>
+        </view>
+</view>
+<view class="section" wx:for="{{delivery}}">
+      <view class="title">物流追踪</view>
+      <block wx:for="{{item.log}}">
+      <block wx:if="{{index == 0}}">
+      <view style="position: relative;margin-top:40rpx;">
+           <view class="left">
+           <image src="../../icon/logistic_hldot.png" class="pointdot"/>
+           </view>
+           <view class="right" style="color:#0eaf09;">
+                <view >{{item.context}}</view>
+                <view>{{item.time}}</view>
+           </view>
+      </view>
+      </block>
+      <block wx:else="{{index != 0}}">
+      <view style="position: relative;">
+           <view class="left">
+             <view class="point"></view>
+           </view>
+           <view class="right" style="color:#ccc;">
+                <view >{{item.context}}</view>
+                <view>{{item.time}}</view>
+           </view>
+      </view>
+      </block>
+      </block>
+</view>

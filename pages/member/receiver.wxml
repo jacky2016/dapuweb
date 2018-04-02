@@ -1,0 +1,20 @@
+<block wx:if="{{receiver.length!=0}}">
+<view class="section" wx:for="{{receiver}}">
+       <view class="info">
+        <view>{{item.name}}</view>
+        <view class="mobile">{{item.mobile}}</view>
+        <view>{{item.area}}{{item.addr}}</view>
+        </view>
+        <view  class="option">
+        <radio bindtap='defaddrtap' data-addrid="{{item.addr_id}}" checked="{{item.def_addr==1?true:false}}"/>
+        <text>设置默认地址</text>
+        <view class="delete" bindtap='deletetap' data-addrid="{{item.addr_id}}">删除</view>
+        </view> 
+</view>
+</block>
+<block wx:else>
+<view class="section" style="text-align:center;">暂无收货地址</view>
+</block>  
+<view class="footer">
+        <view bindtap='addtap'><text style="font-weight:bold;">➕</text>新增收货地址</view>
+</view>

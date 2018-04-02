@@ -1,0 +1,99 @@
+page{
+    background: #f0f0f0;
+}
+.scroll-view_H {
+	white-space:nowrap;
+	width:100%;
+	background-color:rgba(255, 255, 255, 0.7);
+}
+.nav-hover {
+	color:#DA5278;
+	border-bottom:3px solid #DA5278;
+}
+.nav-name {
+	display:inline-block;
+	font-size:28rpx;
+	width: 33.33%;
+  text-align:center;
+}
+.useable{
+     width:100%;
+     background: url(https://activity.dapuimg.com/userCenter_couponsUsed.png);
+     background-size: 100% 100%;
+     color:#fff;
+     font-size:20rpx;
+     margin-top:20rpx;
+}
+.useable .leftitem{
+     width:70%;
+}
+.rightitem{
+     position:absolute;
+     top:6rpx;
+     right:30rpx;
+     text-align:center;
+}
+.useable .doller{
+    font-size: 60rpx;
+    font-weight:bold;
+}
+.useable .date{
+    padding: 4rpx 40rpx;
+    color: #DA5278;
+    font-size:24rpx;
+}
+.useable .used{
+      float: right;
+      margin-top: -36rpx;
+      font-weight:bold; 
+}
+.unuseable{
+     width:100%;
+     background: url(https://activity.dapuimg.com/userCenter_couponsUnused.png);
+     background-size: 100% 100%;
+     color:#fff;
+     font-size:20rpx;
+     margin-top:20rpx;
+}
+.unuseable .leftitem{
+     width:70%;
+}
+.unuseable .doller{
+    font-size: 60rpx;
+    font-weight:bold;
+}
+.unuseable .date{
+    padding: 4rpx 40rpx;
+    color: #ccc;
+    font-size:24rpx;
+}
+.unuseable .used{
+      float: right;
+      margin-top: -36rpx;
+      font-weight:bold; 
+}
+.exchange{
+     width:100%;
+     background: url(https://activity.dapuimg.com/userCenter_exchanged.png);
+     background-size: 100% 100%;
+     color:#fff;
+     font-size:20rpx;
+     margin-top:20rpx;
+}
+.exchange .leftitem{
+     width:70%;
+}
+.exchange .doller{
+    font-size: 60rpx;
+    font-weight:bold;
+}
+.exchange .date{
+    padding: 4rpx 30rpx;
+    color: #5CB29B;
+    font-size:24rpx;
+}
+.exchange .used{
+      float: right;
+      margin-top: -36rpx;
+      font-weight:bold; 
+}

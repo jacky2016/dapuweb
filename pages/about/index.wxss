@@ -1,0 +1,22 @@
+page{
+    background: #f0f0f0;
+}
+.section{
+   background: #fff;
+   font-size:28rpx;
+   margin-top:40rpx;
+}
+.version{
+   margin-top:-30rpx;
+}
+.item{
+    border-top: 2rpx solid #dadada;
+    border-bottom: 2rpx solid #dadada;
+    padding: 20rpx ;
+    margin-top:-2rpx;
+}
+.itemtip{
+    float:right;
+    font-size:24rpx;
+    color:#ccc;
+}

@@ -1,0 +1,61 @@
+<view class="nav-scroll">
+	    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+		        <text   class="nav-name {{status==1?'nav-hover':''}}" catchtap="handleTap" data-status="1">可用</text>
+            <text   class="nav-name {{status==0?'nav-hover':''}}" catchtap="handleTap" data-status="0">不可用</text>
+            <text   class="nav-name {{status==2?'nav-hover':''}}" catchtap="handleTap" data-status="2">可兑换</text> 
+	    </scroll-view>
+</view>
+<block wx:if="{{status==1}}">
+<view class="useable" wx:for="{{coupons}}">
+       <view style="padding: 30rpx;position:relative;">
+            <view class="leftitem">
+                  <view style="font-size: 30rpx;">{{item.cpns_name}}</view>
+                  <view>{{item.description}}</view>
+            </view>
+            <view class="rightitem">
+                   <view style="border-bottom:1px dashed #D791A5;">￥<text class="doller">{{item.action_solution.b2c_promotion_solutions_byfixed.total_amount}}</text></view>
+                   <view style="font-size:24rpx;margin-top:4rpx;">满{{item.conditions.conditions[1].conditions[0].value}}元可用</view>
+            </view>
+       </view>
+       <view class="date">
+           <view>使用时间：{{item.from_time}}~{{item.to_time}}</view>
+           <view class="used">可使用</view>
+       </view>
+</view>
+</block>
+<block wx:if="{{status==0}}">
+     <view class="unuseable" wx:for="{{coupons}}">
+       <view style="padding: 30rpx;position:relative;">
+            <view class="leftitem">
+                  <view style="font-size: 30rpx;">{{item.cpns_name}}</view>
+                  <view>{{item.description}}</view>
+            </view>
+            <view class="rightitem">
+                   <view style="border-bottom:1px dashed #ccc;">￥<text class="doller">{{item.action_solution.b2c_promotion_solutions_byfixed.total_amount}}</text></view>
+                   <view style="font-size:24rpx;margin-top:4rpx;">满{{item.conditions.conditions[1].conditions[0].value}}元可用</view>
+            </view>
+       </view>
+       <view class="date">
+           <view>使用时间：{{item.from_time}}~{{item.to_time}}</view>
+           <view class="used">不可用</view>
+       </view>
+  </view>
+</block>
+<block wx:if="{{status==2}}">
+     <view class="exchange" wx:for="{{coupons}}">
+       <view style="padding: 30rpx;position:relative;">
+            <view class="leftitem">
+                  <view style="font-size: 30rpx;">{{item.cpns_name}}</view>
+                  <view>{{item.description}}</view>
+            </view>
+            <view class="rightitem">
+                   <view style="border-bottom:1px dashed #fff;">￥<text class="doller">{{item.action_solution.b2c_promotion_solutions_byfixed.total_amount}}</text></view>
+                   <view style="font-size:24rpx;margin-top:4rpx;">满{{item.conditions.conditions[1].conditions[0].value}}元可用</view>
+            </view>
+       </view>
+       <view class="date">
+           <view>需要积分：{{item.cpns_point}}({{item.from_time}}~{{item.to_time}})</view>
+           <view class="used">可兑换</view>
+       </view>
+  </view>
+</block>

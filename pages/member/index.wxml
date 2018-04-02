@@ -1,0 +1,79 @@
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.headimgurl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.login_name}}</text>
+    <text class="userinfo-nickname">会员等级：{{userInfo.name}}</text>
+  </view>
+  <view class="info_list">
+        <view class="weui_cell" bindtap='myorders' data-item="{{userInfo.member_id}}">
+            <view class="weui_cell_hd"><image src="../../icon/orders.png"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p"> 我的订单 </view>
+            </view>
+            <view class="with_arrow"><image src="../../icon/arrowdown.png" style="width:36rpx;height:36rpx;"></image></view>
+        </view>
+        <view class="weui_cell" bindtap='mycomment' data-item="{{userInfo.member_id}}">
+            <view class="weui_cell_hd"><image src="../../icon/comment.png"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p"> 我的评论 </view>
+            </view>
+            <view class="badge" wx:if="{{userInfo.no_discuss_count > 0}}">{{userInfo.no_discuss_count}}条未评论</view>
+            <view class="with_arrow"><image src="../../icon/arrowdown.png" style="width:36rpx;height:36rpx;"></image></view>
+        </view>
+        <view class="weui_cell" bindtap='mymsg' data-item="{{userInfo.member_id}}">
+            <view class="weui_cell_hd"><image src="../../icon/message.png"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p"> 我的消息 </view>
+            </view>
+            <view class="badge" wx:if="{{userInfo.msgcount > 0}}">{{userInfo.msgcount}}条未读消息</view>
+            <view class="with_arrow"><image src="../../icon/arrowdown.png" style="width:36rpx;height:36rpx;"></image></view>
+        </view>
+        <view class="weui_cell" bindtap='mycores' data-point="{{userInfo.point}}">
+            <view class="weui_cell_hd"><image src="../../icon/cores.png"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p"> 我的积分 </view>
+            </view>
+            <view class="badge">{{userInfo.point}}可用积分</view>
+            <view class="with_arrow"><image src="../../icon/arrowdown.png" style="width:36rpx;height:36rpx;"></image></view>
+        </view>
+        <view class="weui_cell" bindtap='mycoupon' data-item="{{userInfo.member_id}}">
+            <view class="weui_cell_hd"><image src="../../icon/coupon.png"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p"> 我的优惠券 </view>
+            </view>
+            <view class="badge" wx:if="{{userInfo.coupon > 0}}">{{userInfo.coupon}}张可用优惠券</view>
+            <view class="with_arrow"><image src="../../icon/arrowdown.png" style="width:36rpx;height:36rpx;"></image></view>
+        </view>
+        <view class="weui_cell" bindtap='mygiftcard' data-item="{{userInfo.member_id}}">
+            <view class="weui_cell_hd"><image src="../../icon/gift.png"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p"> 我的礼品卡 </view>
+            </view>
+            <view class="badge" wx:if="{{userInfo.cardcount > 0}}">{{userInfo.cardcount}}张礼品卡</view>
+            <view class="with_arrow"><image src="../../icon/arrowdown.png" style="width:36rpx;height:36rpx;"></image></view>
+        </view>
+        <view class="weui_cell" bindtap='myaddress' data-item="{{userInfo.member_id}}">
+            <view class="weui_cell_hd"><image src="../../icon/address.png"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p"> 我的地址 </view>
+            </view>
+            <view class="with_arrow"><image src="../../icon/arrowdown.png" style="width:36rpx;height:36rpx;"></image></view>
+        </view>
+        <view class="weui_cell" bindtap='aboutdapu' data-item="{{userInfo.member_id}}">
+            <view class="weui_cell_hd"><image src="../../icon/about.png"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p"> 关于大朴 </view>
+            </view>
+            <view class="with_arrow"><image src="../../icon/arrowdown.png" style="width:36rpx;height:36rpx;"></image></view>
+        </view>
+        <view class="weui_cell" style="border:none;" bindtap='myservice' data-item="{{userInfo.member_id}}">
+            <view class="weui_cell_hd"><image src="../../icon/service.png"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p">  
+                <button type="primary" size="20" session-from="sobot|{{userInfo.login_name}}|{{userInfo.headimgurl}}" open-type="contact"/>在线客服
+                </view>
+            </view>
+            <view class="with_arrow"><image src="../../icon/arrowdown.png" style="width:36rpx;height:36rpx;"></image></view>
+        </view>
+  </view>
+</view>

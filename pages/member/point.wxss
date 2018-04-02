@@ -1,0 +1,31 @@
+.section{
+    background:#DA5278;
+    color:#fff;
+    padding: 30rpx 20rpx;
+    font-size:24rpx;
+}
+.help{
+    float: right;
+    margin-top: -40rpx;
+}
+.points{
+     font-size: 60rpx;
+     font-weight: bold;
+}
+.infotitle{
+      background:#f0f0f0;
+      padding: 20rpx;
+      font-size:32rpx;
+}
+.corelist{
+    background: #fff;
+    font-size:30rpx;
+    padding:20rpx;
+    border-bottom:2rpx solid #ccc;
+}
+.core{
+    float: right;
+    margin-top: -40rpx;
+    color: #DA5278;
+    font-weight:bold;
+}
